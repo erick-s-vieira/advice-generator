@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300&display=swap');
+
+body{
+    background-color: var(--background-color);
+    font-family: 'Fira Code', monospace;
+    font-weight: 700;
+    
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+
+.caixa-de-mensagem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--advice-card-color);
+    border-radius: 10px;
+    margin: 20px;
+    width: 400px;
+    
+    
+}
+.caixa-de-mensagem .conselho {
+    color: var(--advice-dice-color);
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 15px;
+    margin-top: 30px;
+}
+.citacao {
+   color: var(--text-color);
+    text-align: right;
+}
+
+.caixa-de-mensagem .texto-conselho {
+    font-size: 23px;
+    padding: 23px;
+    text-align: center;
+    color: var(--text-color);
+}
+
+.imagem {
+    transform: scale(0.60);
+}
+
+.caixa-de-mensagem .botao-dado  {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: none;
+    background-color: var(--advice-dice-color);
+    transform: translateY(50%);
+    transition: all 0.5;
+    transform: scale(1);
+    
+}
+
+.botao-dado :hover {
+   transform: scale(1.2);
+    color: #53FFAB;
+    cursor: pointer;
+    box-shadow: 0 5px 15px var(--advice-dice-color);
+}
+
+
