@@ -13,58 +13,56 @@ body{
     height: 100vh;
 }
 
-
 .caixa-de-mensagem {
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: var(--advice-card-color);
     border-radius: 10px;
-    margin: 20px;
-    width: 400px;
-    
-    
+    width: auto;
+    max-width: 400px;
 }
-.caixa-de-mensagem .conselho {
+
+.caixa-de-mensagem .divisoria {
+    transform: scale(0.70);
+    margin-top: -10px;
+}
+
+.advice-id {
     color: var(--advice-dice-color);
     text-transform: uppercase;
     letter-spacing: 5px;
     font-size: 15px;
-    margin-top: 30px;
-}
-.citacao {
-   color: var(--text-color);
-    text-align: right;
+    margin-top: 20px;
 }
 
-.caixa-de-mensagem .texto-conselho {
+.texto-conselho {
     font-size: 23px;
-    padding: 23px;
+    margin-top: -15px;
+    padding: 25px;
     text-align: center;
     color: var(--text-color);
 }
-
-.imagem {
-    transform: scale(0.60);
+.botao-dado img{
+    margin: 3px;
 }
-
-.caixa-de-mensagem .botao-dado  {
-    width: 50px;
-    height: 50px;
+.botao-dado{
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    margin-bottom: 6px;
     border-radius: 50%;
-    border: none;
+    border: 1px solid hsl(150, 100%, 66%);
     background-color: var(--advice-dice-color);
-    transform: translateY(50%);
     transition: all 0.5;
     transform: scale(1);
-    
 }
 
 .botao-dado :hover {
-   transform: scale(1.2);
+   transform: scale(1.1);
     color: #53FFAB;
     cursor: pointer;
-    box-shadow: 0 5px 15px var(--advice-dice-color);
+    box-shadow: 0 0px 15px var(--advice-dice-color);
 }
 
 
